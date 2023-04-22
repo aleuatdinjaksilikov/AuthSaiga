@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragments">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome_to_saiga"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/log_in_to_your_account"
+        android:textColor="@color/color_custom_grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_welcome"
+        app:layout_constraintStart_toStartOf="@id/tv_welcome"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_input_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittext"
+        android:drawableStart="@drawable/ic_call"
+        android:drawablePadding="10dp"
+        android:hint="@string/text_numbers_phone"
+        android:lines="1"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:digits="0123456789+"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:padding="13dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_desc" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_buttons"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/et_input_phoneNum"
+        app:layout_constraintStart_toStartOf="@id/et_input_phoneNum"
+        app:layout_constraintTop_toBottomOf="@id/et_input_phoneNum"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_havent_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Don’t have an account?"
+        android:textColor="@color/color_custom_grey"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/btn_logIn"
+        app:layout_constraintStart_toStartOf="@id/btn_logIn"
+        app:layout_constraintEnd_toStartOf="@id/tv_signUp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_logIn"
+        app:layout_constraintEnd_toEndOf="@id/btn_logIn"
+        app:layout_constraintStart_toEndOf="@id/tv_havent_acc"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Saiga</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="text_numbers_phone">+99 890 123 45 67</string>
+    <string name="welcome_to_saiga">Welcome to Saiga</string>
+    <string name="log_in_to_your_account">log in to your account</string>
+    <string name="log_in">Log in</string>
+</resources>
